@@ -24,12 +24,14 @@
     }
 
     .base-button {
+        cursor: pointer;
         display: flex;
         align-items: center;
         justify-content: center;
         border-radius: 90px;
         padding: 1em;
         width: 8em;
+        z-index: 10;
     }
 
     .base-button:hover {
@@ -179,7 +181,6 @@
             top: -10em;
             right: -13em;
             width: 40em;
-            z-index: 10;
         }
 
         .changing-width {
