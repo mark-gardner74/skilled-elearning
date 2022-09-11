@@ -1,0 +1,217 @@
+
+    header, footer {
+        display: flex;
+        width: var( --break-size );
+        justify-content: space-between;
+        padding-left: 2em;
+        margin-top: 1em;
+    }
+
+    footer {
+        height: 5em;
+        align-items: center;
+        background-color: var( --dark-blue );
+        margin-top: 0;
+        color: white;
+    }
+
+    .container {
+        min-width: var( --min-width-all );
+        max-width: var( --max-width-all );
+        margin: 0.5em 1em;
+        width: var( --break-width-small );
+        overflow: hidden;
+    }
+
+    .base-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 90px;
+        padding: 1em;
+        width: 8em;
+    }
+
+    .base-button:hover {
+        opacity: 0.7;
+    }
+
+/*  Top section column to row flex box  */
+
+    .flex-column-to-row {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .flex-group-column {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 3em;
+    }
+
+    .main-header {
+        font-size: var( --heading-l );
+    }
+
+/*  End of top section  */
+
+    .purple-to-orange {
+        background-image: var( --orange-purple-grad );
+        color: white;
+    }
+
+    .blue-to-purple {
+        background-image: var( --blue-purple-grad );
+    }
+
+    .consistent-margin {
+        margin-top: 1.5em;
+        margin-bottom: 1.5em;
+    }
+
+    .changing-image-woman {
+        width: 30em;
+    }
+
+    .flex-with-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        background-image: var( --white-to-grey );
+        row-gap: 2em;
+    }
+
+    .changing-width {
+        height: 20em;
+        width: 100%;
+        padding: 1em;
+    }
+
+    .inner-item-div {
+        display: flex;
+        height: 100%;
+    }
+
+    .small-box-flex {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        justify-content: space-around;
+        border: 1px solid #EEE;
+        padding: 1em;
+        border-radius: 1em;
+        background-color: white;
+    }
+
+    #animation-div::before {
+        background-image: url( "../assets/icon-animation.svg" );
+    }
+
+    #design-div::before {
+        background-image: url( "../assets/icon-design.svg" );
+    }
+    #photography-div::before {
+        background-image: url( "../assets/icon-photography.svg" );
+    }
+    #crypto-div::before {
+        background-image: url( "../assets/icon-crypto.svg" );
+    }
+    #business-div::before {
+        background-image: url( "../assets/icon-business.svg" );
+    }
+
+    .small-box-flex::before {
+        position: absolute;
+        content: '';
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 3em;
+        height: 3em;
+        top: -1.5em;
+    }
+
+    .first-box {
+        display: flex;
+        align-items: center;
+        padding-left: 1em;
+        padding-right: 3em;
+        background-image: var( --orange-purple-grad );
+        color: white;
+        border-radius: 1em;
+    }
+
+    .small-box-flex > a {
+        text-decoration: none;
+    }
+
+    @media screen and ( min-width: 768px ) {
+
+        :root {
+            --break-size: var( --break-width-tablet );
+        }
+
+        header, footer {
+            padding-right: 5em;
+        }
+
+        .container {
+            width: var( --break-width-tablet );
+        }
+
+/*  Top section column to row flex box  */
+
+        .flex-column-to-row {
+            flex-direction: row;
+            height: 30em;
+        }
+
+        .flex-group-column {
+            margin-top: 0;
+            width: 50%;
+        }
+
+/*  End of top section  */
+
+        .changing-image-woman {
+            position: absolute;
+            content: url( "../assets/image-hero-tablet.png" );
+            top: -10em;
+            right: -13em;
+            width: 40em;
+            z-index: 10;
+        }
+
+        .changing-width {
+            width: 50%;
+        }
+    }
+
+    @media screen and ( min-width: 1024px ) {
+
+        :root {
+            --break-size: var( --break-width-desktop );
+        }
+
+        .container {
+            width: var( --break-width-desktop );
+        }
+
+        .main-header {
+            font-size: var( --heading-xl );
+        }
+
+        .changing-width {
+            width: 33%;
+        }
+
+        .changing-image-woman {
+            content: url( "../assets/image-hero-desktop.png" );
+        }
+    }
+
+    @media screen and ( min-width: 1440px ) {
+        .changing-image-woman {
+            content: url( "../assets/image-hero-desktop@2x.png" );
+        }
+    }

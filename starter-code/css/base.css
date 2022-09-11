@@ -1,0 +1,110 @@
+
+    :root {
+
+/*  Font Sizes  */
+
+        --fs-default: 16px;
+        --heading-xl: 3.5rem;
+        --heading-l: 2.5rem;
+        --heading-m: 2rem;
+        --heading-s: 1.5rem;
+
+        --body-m: 1.125rem;
+        --body-s: 1rem;
+
+/*  Widths  */
+
+        --min-width-all: 320px;
+        --max-width-all: 1440px;
+
+        --break-width-small: 360px;
+        --break-width-tablet: 768px;
+        --break-width-desktop: 1024px;
+        --break-width-largest: 1440px;
+
+        --break-size: var( --break-width-small );
+
+/*  Colours */
+
+        --lightish-blue: rgb( 102, 108, 163 );
+        --dark-blue: rgb( 19, 24, 63 );
+        --mid-grey: rgb( 131, 134, 154 );
+        --bright-pink: rgb( 247, 71, 128 );
+        --light-pink: rgb( 255, 167, 195 );
+        --orange-purple-grad: linear-gradient( rgb( 240, 42, 166 ), rgb( 255, 111, 72 ) );
+        --blue-purple-grad: linear-gradient( rgb( 72, 81, 255 ), rgb( 240, 42, 166 ) );
+        --white-to-grey: linear-gradient( rgb( 255, 255, 255 ), rgb( 240, 241, 255 ) );
+
+    }
+
+    * {
+        font-size: var( --fs-default );
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+        scroll-margin: 2rem;
+    }
+
+    html, body {
+        font-family: 'Roboto', sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    img, picture, svg {
+        display: block;
+        max-width: 100%;
+    }
+
+/*  Project Specific    */
+
+    .heading-xl {
+        font-size: var( --heading-xl );
+        line-height: 70px;
+    }
+
+    .heading-l {
+        font-size: var( --heading-l );
+        line-height: 51px;
+    }
+
+    .heading-m {
+        font-size: var( --heading-m );
+        line-height: 40px;
+    }
+
+    .heading-s {
+        font-size: var( --heading-s );
+        line-height: 28px;
+    }
+
+    .body-m {
+        font-size: var( --body-m );
+        line-height: 28px;
+    }
+
+    .body-s {
+        font-size: var( --body-s );
+        line-height: 28px;
+    }
+
+    .bolder-text {
+        font-weight: bolder;
+    }
+
+    .bold-text {
+        font-weight: bold;
+    }
+
+    .dark-blue {
+        background-color: var( --dark-blue );
+        color: white;
+    }
+
+    .bright-pink {
+        color: var( --bright-pink );
+    }
